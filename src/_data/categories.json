@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Semester 1",
+    "courses": [
+      { "code": "CU101", "title": "Title 1" },
+      { "code": "CU102", "title": "Title 2" }
+    ]
+  },
+  {
+    "category": "Semester 2",
+    "courses": [
+      { "code": "CU101", "title": "Title 1" },
+      { "code": "CU102", "title": "Title 2" }
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "title1": "Certificate Program in Core Java",
+    "code": "CU101",
+    "title": "core-java",
+    "modules": [
+      {
+        "name": "OOPS",
+        "topics": [
+          "Class/Object",
+          "Encapsulation",
+          "Inheritance",
+          "Constructor",
+          "Polymorphism",
+          "Abstraction"
+        ]
+      },
+
+      {
+        "name": "Collection Framework",
+        "topics": [
+          "List, ArrayList",
+          "Generics",
+          "Set,TreeSet,HashSet",
+          "Map,HashMap",
+          "Sorting - Comparable/Comparator",
+          "Override hashCode and equals methods"
+        ]
+      },
+      {
+        "name": "Utilities",
+        "topics": [
+          "SimpleDateFormat",
+          "Parsing",
+          "LocalDate,LocalTime,LocalDateTime"
+        ]
+      },
+      {
+        "name": "JDBC",
+        "topics": [
+          "Creating a Database and tables",
+          "Getting Information from Database",
+          "Connecting a Java program to a Database",
+          "Prepared Statements & Statement Classes in Java",
+          "Inserting, Updating & Deleting Table data",
+          "Obtaining Result Set Information",
+          "Invoke Stored Procedure using Callable Statement"
+        ]
+      },
+
+      {
+        "name": "Exception Handling",
+        "topics": [
+          "Exceptions Overview",
+          "Exception Handling",
+          "The Finally Block",
+          "Catching Exceptions",
+          "Exception Methods",
+          "Declaring Exceptions",
+          "Defining and Throwing Exceptions",
+          "Errors and Runtime Exceptions",
+          "Assertions",
+          "try with resources(Java 7)",
+          "Multi catch(Java 7)"
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "Certificate Program in JEE",
+    "title": "jee",
+    "code": "CU102",
+    "modules": [
+      {
+        "name": "OOPS",
+        "topics": [
+          "Class/Object",
+          "Encapsulation",
+          "Inheritance",
+          "Constructor",
+          "Polymorphism",
+          "Abstraction"
+        ]
+      },
+
+      {
+        "name": "Collection Framework",
+        "topics": [
+          "List, ArrayList",
+          "Generics",
+          "Set,TreeSet,HashSet",
+          "Map,HashMap",
+          "Sorting - Comparable/Comparator",
+          "Override hashCode and equals methods"
+        ]
+      },
+      {
+        "name": "Utilities",
+        "topics": [
+          "SimpleDateFormat",
+          "Parsing",
+          "LocalDate,LocalTime,LocalDateTime"
+        ]
+      },
+      {
+        "name": "JDBC",
+        "topics": [
+          "Creating a Database and tables",
+          "Getting Information from Database",
+          "Connecting a Java program to a Database",
+          "Prepared Statements & Statement Classes in Java",
+          "Inserting, Updating & Deleting Table data",
+          "Obtaining Result Set Information",
+          "Invoke Stored Procedure using Callable Statement"
+        ]
+      },
+
+      {
+        "name": "Exception Handling",
+        "topics": [
+          "Exceptions Overview",
+          "Exception Handling",
+          "The Finally Block",
+          "Catching Exceptions",
+          "Exception Methods",
+          "Declaring Exceptions",
+          "Defining and Throwing Exceptions",
+          "Errors and Runtime Exceptions",
+          "Assertions",
+          "try with resources(Java 7)",
+          "Multi catch(Java 7)"
+        ]
+      }
+    ]
+  }
+]
