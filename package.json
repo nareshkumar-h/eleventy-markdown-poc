@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +26,9 @@
     "markdown-it": "^12.0.4",
     "markdown-it-attrs": "^4.0.0",
     "slugify": "^1.4.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
   }
 }

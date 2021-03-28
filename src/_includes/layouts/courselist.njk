@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Course List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="../js/getNoOfTopics.js" defer></script>
+
+    <style>
+      .content-link {
+        color: {{site.theme.linkColor}}
+      }
+    </style>
+  </head>
+  <body style="background-color:{{site.backgroundcolor.backgroundColor}}">
+    {# {% block header %}
+      {% include "components/header.njk" %}
+    {% endblock header %} #}
+    <header >
+      <nav class="navbar navbar-expand-lg bg-dark" style="background-color:{{site.theme.navbar.backgroundColor}} !important;color:{{site.theme.navbar.color}}">
+        <a class="navbar-brand" href="#" style="color:{{site.theme.navbar.color}}">&nbsp;&nbsp;&nbsp{{organization.name}}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            {% for item in site.menus %}
+              <li class="nav-item">
+                <a href="{{ item.url }}" class="nav-link" style="color:{{site.theme.navbar.linkColor}}" {{ 'aria-current=page' if page.url == item.url }}>{{ item.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          
+          </div>
+
+        </nav>
+      </header>
+
+      <div class="container">
+
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <header class="post_head" id="title">
+            <h4>
+              <font color="cadetblue" class="ng-binding"> All Courses 
+            </font>
+            </h4>
+
+          </header>
+        </div>
+        <div class="row">
+          {% block content %}
+            {%- for categoryObj in organization.categories %}
+              <div class="col-6">
+                <div class="card  h-100">
+                  <div class="card-header">
+                    <font color="cadetblue">
+                      <b class="ng-binding">
+                        {{categoryObj.name}}
+                      </b>
+                    </font>
+                  </div>
+                  <div class="card-body">
+
+                    {%- for course in categoryObj.courses %}
+                      {% if course.status === "PUBLISHED" %}
+                        <a class="content-link" href="{{course.code}}.html">{{course.code.padEnd(5,' ')}} - {{course.title}}</a><br/>
+                      {% else %}
+                        <a class="content-link" href="#">{{course.code.padEnd(5,' ')}} - {{course.title}}</a><br/>
+                      {% endif %}
+
+                    {% endfor -%}
+
+                  </div>
+                </div>
+              </div>
+
+            {% endfor -%}
+          {% endblock content %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+</body>
+</html>

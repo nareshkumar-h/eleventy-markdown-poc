@@ -1,8 +1,22 @@
 {
   "meta": {
-    "title": "Chainsys",
-    "description": "Chainsys"
+    "title": "SPINSOFT",
+    "description": "Spinsoft"
   },
   "language": "en",
-  "name": "Chainsys"
+  "brandName": "SPINSOFT",
+  "theme": {
+    "navbar": {
+      "backgroundColor": "cadetblue",
+      "color": "white",
+      "linkColor": "white"
+    },
+    "linkColor": "black",
+    "backgroundColor": "white"
+  },
+  "menus": [
+    { "name": "Home", "url": "/" },
+    { "name": "Courses", "url": "/" }
+  ],
+  "organization": "spinsoft"
 }

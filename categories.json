@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Semester 1",
+    "courses": [
+      {
+        "code": "CU101",
+        "title": "Java",
+        "organization": "spinsoft"
+      }
+    ]
+  }
+]

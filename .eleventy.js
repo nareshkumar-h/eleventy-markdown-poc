@@ -4,12 +4,16 @@ const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (config) {
   config.addLayoutAlias("course", "layouts/course.njk");
+  config.addJavaScriptFunction("getNoOfTopics", function (course) {
+    return JSON.stringify(course);
+  });
 
   config.dir = {
     input: "src",
     output: "dist",
   };
   config.addPassthroughCopy("src/_assets");
+  config.addPassthroughCopy("src/js");
   //config.addPassthroughCopy("css");
   config.setDataDeepMerge(true);
   config.setTemplateFormats([

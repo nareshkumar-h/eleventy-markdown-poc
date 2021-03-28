@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "code":"CJ",
+        "name":"Core Java Developer"
+    },
+    {
+        "id":2,
+        "code":"JFS",
+        "name":"Java Full Stack Developer"
+    }
+]

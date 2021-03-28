@@ -1,29 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: layouts/viewcourse.njk
 title: course
 pagination:
     data: courses
     size: 1
     alias: course
-permalink: "courses/{{ course.code }}/index.html"
+permalink: "{{course.organization}}/{{course.code}}.html"
 ---
-
-<div id="CourseController">
-    <header class="post_head" id="title">
-        <h2><a href=''>{{course.title1}} </a></h2>
-    </header> 
-
-    {%- for module in course.modules -%}
-    <span id="modules" ng-repeat="module in course.modules">
-    <p><font color='cadetblue'> <b> Module {{forloop.index }}: {{module.name}} </b></font></p>
-    {%- for topic in module.topics -%}
-    <div ng-repeat="topic in module.topics">
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Topic {{ forloop.index}}: {{topic}}</p>
-    </div>
-    {%- endfor -%}
-    {%- endfor -%}
-
-</span>
-
-
-</div>

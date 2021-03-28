@@ -1,0 +1,14 @@
+const fs = require("fs");
+const path = require("path");
+
+const moviesFolder = path.resolve(__dirname, "../organizations");
+
+const movies = fs
+  .readdirSync(moviesFolder)
+  .filter((name) => path.extname(name) === ".json")
+  .map((name) => ({
+    key: path.parse(name).name,
+    ...require(path.join(moviesFolder, name)),
+  }));
+
+module.exports = movies;
